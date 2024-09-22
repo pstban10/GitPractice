@@ -1,0 +1,12 @@
+* {
+    padding: auto;
+    margin: auto;
+    color: #fff;
+    background-color: black;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}

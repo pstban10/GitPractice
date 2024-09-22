@@ -39,28 +39,23 @@ h1 {
     width: 150px;
     height: 150px;
     cursor: pointer;
-    margin-bottom: 20px;
-    /* Espacio entre el botón y la pantalla */
+    position: fixed;
+    /* Fija el botón en la pantalla */
+    top: 75px;
+    /* A 75px del top */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta para centrar exactamente */
 }
 
 /* Estilo de la pantalla */
-#pantalla {
-    background-color: #f0f0f0;
-    /* Fondo claro */
+#pantalla img {
+    max-width: 100%;
+    height: auto;
     border: 2px solid #ccc;
-    /* Borde gris */
     border-radius: 10px;
-    /* Bordes redondeados */
-    padding: 20px;
-    /* Espaciado interno */
-    font-size: 24px;
-    /* Tamaño de fuente grande */
-    text-align: center;
-    /* Texto centrado */
-    width: 300px;
-    /* Ancho fijo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra */
 }
 
 /* Estilos responsivos */

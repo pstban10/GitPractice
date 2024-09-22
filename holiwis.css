@@ -1,16 +1,29 @@
+/* Estilos generales */
 * {
-    padding: auto;
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #fff;
     background-color: black;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Estilo del encabezado */
 h1 {
-    margin: auto;
     text-align: center;
-    justify-content: center;
+    margin-top: 20px;
 }
 
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo del botón */
 #botonCentral {
     background-color: #E2725B;
     /* Color terracota */
@@ -23,19 +36,43 @@ h1 {
     font-size: 24px;
     border-radius: 50%;
     /* Hace el botón circular */
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
     cursor: pointer;
+    margin-bottom: 20px;
+    /* Espacio entre el botón y la pantalla */
 }
 
+/* Estilo de la pantalla */
+#pantalla {
+    background-color: #f0f0f0;
+    /* Fondo claro */
+    border: 2px solid #ccc;
+    /* Borde gris */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado interno */
+    font-size: 24px;
+    /* Tamaño de fuente grande */
+    text-align: center;
+    /* Texto centrado */
+    width: 300px;
+    /* Ancho fijo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+/* Estilos responsivos */
 @media (max-width: 600px) {
     #botonCentral {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    #pantalla {
+        width: 80%;
         font-size: 20px;
     }
 }
